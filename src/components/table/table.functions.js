@@ -16,6 +16,7 @@ export function matrix($target, $current) {
 
   return cols.reduce((acc, col) => {
     rows.forEach(row => acc.push(`${row}:${col}`));
+
     return acc;
   }, []);
 }
